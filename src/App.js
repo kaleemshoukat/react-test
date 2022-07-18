@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
 import './App.css';
+import LiveWidth from './components/LiveWidth'
 
 function App() {
-  return (
+    let divHeight;
+    window.setDivHeight = (height) => {
+        divHeight = height
+        document.getElementById('wrap').style.height=height+'px'
+    }
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <LiveWidth />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,47 @@
+1- What is your favourite new javascript feature and why?
+ANS- Promise.any() is a new javascript feature. Promise.any is almost opposite to Promise.all. Promise.all is executed when
+all the promises that are mentioned while defining it are resolved whereas Promise.any is executed
+if any of the promises that is mentioned is resolved.
+
+2- Explain an interesting way in which you have used this javascript feature.
+ANS- I had a scenario where there were differnt random tickers of crypto. So, I used Promise.any() to featch data for them with
+minimum time.
+
+3- Is there any difference between regular function syntax and the shorter arrow function syntax? (Write the answer in
+your own words)
+ANS- There is only syntax difference in regular and arrow functions else they work in same manners.
+
+4- What is the difference between ‘myFunctionCall(++foo)’   and  ‘myFunctionCall(foo++)’
+ANS- In myFunctionCall(++foo) foo will increase its value by 1 in memory and than it will brinted.
+While in case of myFunctionCall(foo++) first foo value will be printed then it will be increased by 1 in memory.
+
+5- In your own words, explain what a javascript ‘class’ is and how it differs from a function.
+ANS- Classes are used for encapsulating logical functions and properties into one type and you can 'new' it up
+using constructor syntax.
+A function is a set of statements that performs a task or calculates a value. For a function it is necessary that
+it takes an input and return a value.
+
+6- In your own words, explain css specificity.
+ANS- Specificity is the means by which browsers decide which CSS property values are the most relevant to an
+element and, therefore, will be applied.
+
+7- In your own words, explain, what is ‘!important’ in css.  Also how does it work?  Are there any special circumstances
+ when using it, where it’s behaviour might not be what you expect?
+ANS- !important forces the style property in css. It disables previous propert value and implements new one.
+Yes there are circumstances when this important will not work like if we write it in the style file and write a inline
+css on the element then the style sheet property will not will despite we have written !important with it.
+
+8- What is your prefered layout system: inline-block, floating + clearing, flex, grid, other?  And why?
+ANS- My preference will be flex because within shortend properties and classes we can get desired layout. For other layouts
+we need more complex div structure as compare to flex.
+
+9- Are negative margins legal and what do they do (margin: -20px)?
+ANS- Negative margins are valid in css.
+A margin-top of -8px means it will be 8px higher than if it had 0 margin.
+
+10- If a <div/> has no margin or other styling and a <p/> tag inside of it has a margin top of some kind, the margin
+from the <p/> tag will show up on the div instead (the margin will show above the div not inside of it),
+why is this?  What are the different things that can be done to prevent it?
+ANS- we should need to fix the div layout with css properties overflow:hidden or clear:both
+
+11- What technologies do you use to unit test your react components?
